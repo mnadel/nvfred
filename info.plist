@@ -14,7 +14,27 @@
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Open in Editor</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</string>
+				<key>modifiers</key>
+				<integer>8388608</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Sublime Text</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7A4D6756-AD7E-4871-91B8-95256685D106</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in nvALT</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -30,6 +50,21 @@
 	<string>nvALT</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -83,6 +118,21 @@
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
+				<string>/Applications/Sublime Text.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
 				<string>/Applications/nvALT.app</string>
 				<key>sourcefile</key>
 				<string></string>
@@ -90,7 +140,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
+			<string>7A4D6756-AD7E-4871-91B8-95256685D106</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -102,16 +152,30 @@
 		<key>684E2425-602B-4C89-8513-E6965ED984BF</key>
 		<dict>
 			<key>xpos</key>
-			<real>370</real>
+			<real>350</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>35</real>
+		</dict>
+		<key>7A4D6756-AD7E-4871-91B8-95256685D106</key>
+		<dict>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>355</real>
 		</dict>
 		<key>D4FA6A33-6067-40FE-A25A-9ABE8E21D4AD</key>
 		<dict>
 			<key>xpos</key>
-			<real>135</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>185</real>
+		</dict>
+		<key>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</key>
+		<dict>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>185</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
