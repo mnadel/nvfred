@@ -5,7 +5,14 @@ import sys
 import mmap
 import json
 import argparse
-from os.path import basename, isfile, join, dirname
+from os.path import basename, join, splitext
+
+def grep(terms, filepath):
+    with open(filepath, mode="r") as f:
+        with mmap.mmap(f.fileno(), length=0, access=mmap.ACCESS_READ) as o:
+            buf = str(o.read()).lower()
+            return all([s.lower() in buf for s in terms])
+
 
 parser = argparse.ArgumentParser(prog=basename(sys.argv[0]), description="alfred+nvalt integration")
 parser.add_argument("-d", "--dir", required=True, help="nvalt storage path")
@@ -17,15 +24,12 @@ terms = [x.strip() for x in " ".join(args.search).split(" ") if len(x.strip()) >
 results = []
 
 for root, _, files in os.walk(args.dir):
-    for file in files:
-        path = os.path.join(root, file)
-        with open(path, mode="r") as f:
-            with mmap.mmap(f.fileno(), length=0, access=mmap.ACCESS_READ) as o:
-                buf = str(o.read()).lower()
-                if all([s.lower() in buf for s in terms]):
-                    results.append({
-                        "title": os.path.splitext(file)[0],
-                        "arg": path
-                    })
+    for file in [x for x in files if x != "Notes & Settings"]:
+        path = join(root, file)
+        if grep(terms, path):
+            results.append({
+                "title": splitext(file)[0],
+                "arg": path
+            })
 
 print(json.dumps({"items": results}))
