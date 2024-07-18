@@ -44,7 +44,7 @@
 			<key>config</key>
 			<dict>
 				<key>behaviour</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>fontmode</key>
 				<integer>2</integer>
 				<key>fontsizing</key>
