@@ -10,31 +10,21 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
+				<string>27C4764D-1113-49E9-A577-0EF43FD43D32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Open in Editor</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</string>
-				<key>modifiers</key>
-				<integer>8388608</integer>
-				<key>modifiersubtext</key>
-				<string>Open in Sublime Text</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>7A4D6756-AD7E-4871-91B8-95256685D106</string>
+				<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Open in nvALT</string>
+				<string>edit</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -53,17 +43,35 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
+				<key>behaviour</key>
+				<integer>1</integer>
+				<key>fontmode</key>
+				<integer>2</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
+				<key>footertext</key>
 				<string></string>
-				<key>sourcefile</key>
+				<key>inputfile</key>
 				<string></string>
+				<key>inputtype</key>
+				<integer>2</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.userinterface.text</string>
 			<key>uid</key>
-			<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
+			<string>27C4764D-1113-49E9-A577-0EF43FD43D32</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -118,29 +126,14 @@
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/Applications/Sublime Text.app</string>
+				<string></string>
 				<key>sourcefile</key>
 				<string></string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/nvALT.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>7A4D6756-AD7E-4871-91B8-95256685D106</string>
+			<string>684E2425-602B-4C89-8513-E6965ED984BF</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -149,33 +142,26 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>27C4764D-1113-49E9-A577-0EF43FD43D32</key>
+		<dict>
+			<key>xpos</key>
+			<real>285</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
 		<key>684E2425-602B-4C89-8513-E6965ED984BF</key>
 		<dict>
 			<key>xpos</key>
-			<real>350</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>35</real>
-		</dict>
-		<key>7A4D6756-AD7E-4871-91B8-95256685D106</key>
-		<dict>
-			<key>xpos</key>
-			<real>355</real>
-			<key>ypos</key>
-			<real>355</real>
+			<real>185</real>
 		</dict>
 		<key>D4FA6A33-6067-40FE-A25A-9ABE8E21D4AD</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>185</real>
-		</dict>
-		<key>DBB16CC2-3CAE-483F-9D06-A40B4E4E6B73</key>
-		<dict>
-			<key>xpos</key>
-			<real>350</real>
-			<key>ypos</key>
-			<real>185</real>
+			<real>110</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
