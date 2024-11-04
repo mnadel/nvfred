@@ -26,7 +26,7 @@ results = []
 for root, _, files in os.walk(args.dir):
     for file in [x for x in files if x != "Notes & Settings"]:
         path = join(root, file)
-        if grep(terms, path):
+        if all([s.lower() in path.lower() for s in terms]) or grep(terms, path):
             results.append({
                 "title": splitext(file)[0],
                 "arg": path
